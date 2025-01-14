@@ -22,9 +22,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0K-f1-Dd6">
                                 <rect key="frame" x="0.0" y="0.0" width="156" height="49.333333333333336"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ns3-9G-K96">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:53" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ns3-9G-K96">
                                         <rect key="frame" x="5" y="10" width="146" height="39.333333333333336"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -40,9 +40,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awr-zM-lGk">
                                 <rect key="frame" x="0.0" y="147.66666666666666" width="156" height="49.333333333333343"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2y-7B-s4A">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-19.16°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2y-7B-s4A">
                                         <rect key="frame" x="0.0" y="0.0" width="156" height="39.333333333333336"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -58,7 +58,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyZ-yH-yQE">
                                 <rect key="frame" x="0.0" y="49.333333333333336" width="156" height="98.333333333333314"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BIGMoon cloud fast wind" translatesAutoresizingMaskIntoConstraints="NO" id="wxv-tg-83A">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear" translatesAutoresizingMaskIntoConstraints="NO" id="wxv-tg-83A">
                                         <rect key="frame" x="10" y="10" width="136" height="78.333333333333329"/>
                                     </imageView>
                                 </subviews>
@@ -71,7 +71,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.28235294117647058" green="0.19215686274509802" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.10980392156862745" green="0.10588235294117647" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fyZ-yH-yQE" firstAttribute="leading" secondItem="88f-8G-tnC" secondAttribute="leading" id="0fT-Rh-BJp"/>
                             <constraint firstItem="Awr-zM-lGk" firstAttribute="top" secondItem="fyZ-yH-yQE" secondAttribute="bottom" id="48j-lh-XSB"/>
@@ -100,15 +100,15 @@
             </constraints>
             <size key="customSize" width="156" height="197"/>
             <connections>
+                <outlet property="Time_Label" destination="Ns3-9G-K96" id="6xX-uw-EPY"/>
                 <outlet property="mainView" destination="88f-8G-tnC" id="Zg0-1D-cFS"/>
-                <outlet property="timeLable" destination="Ns3-9G-K96" id="iVe-1S-krF"/>
-                <outlet property="weatherImage" destination="wxv-tg-83A" id="k77-Rj-xXt"/>
-                <outlet property="weatherLbl" destination="O2y-7B-s4A" id="7Rc-Xj-LP6"/>
+                <outlet property="temperatureLabel" destination="O2y-7B-s4A" id="cQM-xB-646"/>
+                <outlet property="weatherImageView" destination="wxv-tg-83A" id="q98-yK-OA1"/>
             </connections>
-            <point key="canvasLocation" x="-453.43511450381675" y="17.95774647887324"/>
+            <point key="canvasLocation" x="-769.46564885496184" y="7.394366197183099"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="BIGMoon cloud fast wind" width="480" height="480"/>
+        <image name="Clear" width="512" height="512"/>
     </resources>
 </document>

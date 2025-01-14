@@ -9,21 +9,19 @@ import UIKit
 
 class LocationTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var weatherImg: UIImageView!
-    @IBOutlet weak var weatherDegreelbl: UILabel!
-    @IBOutlet weak var hilowLbl: UILabel!
-    @IBOutlet weak var loactionLbl: UILabel!
-    @IBOutlet weak var probabilityLbl: UILabel!
+    @IBOutlet weak var weatherImageView: UIImageView!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var windSpeedLabel: UILabel!           
+    @IBOutlet weak var conditionLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-    }
-    
 }

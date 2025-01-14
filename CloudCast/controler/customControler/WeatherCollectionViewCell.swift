@@ -11,9 +11,10 @@ class WeatherCollectionViewCell: UICollectionViewCell {
 
    
     @IBOutlet weak var mainView: UIView!
-    @IBOutlet weak var timeLable: UILabel!
-    @IBOutlet weak var weatherLbl: UILabel!
-    @IBOutlet weak var weatherImage: UIImageView!
+    @IBOutlet weak var weatherImageView: UIImageView!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var Time_Label: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
